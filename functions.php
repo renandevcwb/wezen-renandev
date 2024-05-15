@@ -36,7 +36,7 @@ add_action( 'after_setup_theme', 'set_theme_supports' );
  */
 
 // Função para call de componentes
-function wezen_get_component( $arg, $slug ){
+function wezen_get_component( $args, $slug ){
     
     $plural = $args . 's';
 
