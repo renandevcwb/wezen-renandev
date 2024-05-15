@@ -1,0 +1,20 @@
+/*
+Tema: Wezen Business
+Author: Renan Delgado de Lima
+GitHub: https://github.com/renandevcwb/wezen-business
+*/
+
+body div header nav main footer button table section aside h1 h2 h3 h4 h5 h6 abbr form input fieldset textarea blockquote cite col label optgroup select  ul li a p span {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.wezen-bg-dark{
+    background-color: #02031a !important;
+}
+
+.color-top-nav{
+    background-color: #9d007a;
+}
