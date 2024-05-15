@@ -16,7 +16,7 @@ function wezen_register_menus(){
             'mainlinks'  => 'Barra de Navegação para Principais Links',
             'pages'      => 'Barra de Navegação para Páginas',
             'categories' => 'Barra de Navegação de Categorias',
-            'Socials'    => 'Barra de Navegação de Redes Sociais'
+            'socials'    => 'Barra de Navegação de Redes Sociais'
         )
     );
 }

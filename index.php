@@ -23,7 +23,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <?php wp_head();?>
     </head>
-    <body class="wezen-body text-white" style="background-color: black;">
+    <body class="wezen-body text-white small-text" style="background-color: black;">
         <?php 
         wezen_get_header();
         wezen_get_content();

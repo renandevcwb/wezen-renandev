@@ -16,7 +16,7 @@
 </div>
 <!-- Fim da Mensagem de Direitos Autorais -->
 <!-- Início do Selo de Desenvolvimento -->
-<div class="col-md dev-seal">
+<div class="col-md dev-seal text-md-end">
     <span class="dev-text">Criado com <i class="fa-solid fa-heart text-danger"></i> por <a class="text-dev" href="https://renandev.com.br" target="_blank" rel="noopener noreferrer">RenanDev</a></span>
 </div>
 <!-- Fim do Selo de Desenvolvimento -->

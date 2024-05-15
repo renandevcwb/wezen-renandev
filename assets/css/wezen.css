@@ -31,6 +31,26 @@ wezen-navbar-top{
     }
 }
 
+.footer-title{
+    font-size: 1.3rem !important;
+}
+
+.small-text{
+    font-size: .9rem !important;
+}
+
+.nav-other-links{
+    .nav-item{
+        .nav-link{
+            color: white !important;
+            padding: 2px !important;
+            &:hover{
+                color: #9d007a !important;
+            }
+        }
+    }
+}
+
 /*
 Seção para barra de navegação superior
 */
@@ -73,6 +93,22 @@ Formulário de Newsletter
         transition: 1s;
         &:hover{
             color: #9d007a;
+        }
+    }
+}
+
+/*
+Navegação de Redes Sociais
+*/
+.social-list{
+    .nav-item{
+        .nav-link{
+            color: white !important;
+            font-size: 1.6rem;
+            transition: 1s;
+        &:hover{
+            color: #9d007a !important;
+        }
         }
     }
 }

@@ -8,9 +8,9 @@
  * 
  */?>
 <!-- Início da Barra de Navegação de Links de Páginas -->
-<nav class="" id="navbar-pages">
+<nav class="nav-infos col-md py-3" id="navbar-pages">
     <h3 class="footer-title">Acesso à Informação</h3>
-    <div class="">
+    <div class="nav-other-links">
         <?php 
 
         // Call da barra de navegação, se configurada
@@ -18,7 +18,7 @@
             wp_nav_menu(
                 array(
                     'theme_location' => 'pages',
-                    'menu_class'     => '',
+                    'menu_class'     => 'nav lfex-column',
                     'conatiner'      => false
                 )
             );

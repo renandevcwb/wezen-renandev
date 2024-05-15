@@ -8,7 +8,7 @@
  * 
  */?>
 <!-- Início da Barra de Navegação de Links Principais -->
-<nav class="navbar navbar-expand-md fixed-top wezen-navbar-top" id="navTop" role="navigation">
+<nav class="navbar navbar-expand-md sticky-top wezen-navbar-top bg-top" id="navTop" role="navigation">
     <div class="container-fluid">
         <div class="col-md d-flex py-1 px-0 justify-content-between align-items-center">
             <button class="navbar-toggler ns-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
