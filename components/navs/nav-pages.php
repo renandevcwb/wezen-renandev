@@ -9,6 +9,7 @@
  */?>
 <!-- Início da Barra de Navegação de Links de Páginas -->
 <nav class="" id="navbar-pages">
+    <h3 class="footer-title">Acesso à Informação</h3>
     <div class="">
         <?php 
 

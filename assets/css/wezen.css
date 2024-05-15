@@ -12,10 +12,23 @@ body div header nav main footer button table section aside h1 h2 h3 h4 h5 h6 abb
 }
 
 .bg-top{
-    background-color: #620e5d !important;
+    background-color: black !important;
 }
 wezen-navbar-top{
     transition: 1s;
+}
+
+.bg-purple{
+    background-color: #9d007a;
+}
+
+.text-dev{
+    color: white !important;
+    text-decoration: none;
+    transition: 1s;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 /*
@@ -29,9 +42,37 @@ Seção para barra de navegação superior
                 font-weight: 500;
                 transition: .5s;
                 &:hover{
-                    color: #acacac !important;
+                    color: #9d007a !important;
                 }
             }
+        }
+    }
+}
+
+/*
+Formulário de Newsletter
+*/
+.form-news{
+    /*border: 1px solid white;
+    border-radius: 10px;*/
+    .input-news{
+        background-color: transparent !important;
+        border: none !important;
+        &::placeholder{
+            color: white !important;
+        }
+        &::-moz-placeholder{
+            color: white !important;
+        }
+        &:focus{
+            box-shadow: none !important;
+        }
+    }
+    .button-news{
+        color: white;
+        transition: 1s;
+        &:hover{
+            color: #9d007a;
         }
     }
 }

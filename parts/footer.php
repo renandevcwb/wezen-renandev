@@ -12,9 +12,9 @@
 wezen_get_component( 'form', 'newsletter' );
 ?>
 <!-- Início do Rodapé -->
-<footer class="container-fluid bg-color-mix" role="complementary">
+<footer class="container-fluid bg-color-mix pt-5" role="complementary">
     <!-- Início das Barras de Navegação da Parte Inferior do Site --> 
-    <div class="row navbar-footer">
+    <div class="row navbar-footer py-3">
         <?php 
         // Call da barra de navegação Pages
         wezen_get_component( 'nav', 'pages' );
@@ -25,7 +25,7 @@ wezen_get_component( 'form', 'newsletter' );
     </div>
     <!-- Fim das Barras de Navegação da Parte Inferior do Site -->
     <!-- Início do Módulo de Direitos Autorais -->
-    <div class="row copyrights-footer">
+    <div class="row copyrights-footer py-2">
         <?php 
         // Call do card de copyrights
         wezen_get_component( 'card', 'copyrights' );
