@@ -36,11 +36,11 @@ add_action( 'after_setup_theme', 'set_theme_supports' );
  */
 
 // Função para call de componentes
-function wezen_get_component( $args, $slug ){
+function wezen_get_component( $arg, $slug ){
     
-    $plural = $args . 's';
+    $plural = $arg . 's';
 
-    get_template_part( 'components/' . $plural . '/' . $args, $slug );
+    get_template_part( 'components/' . $plural . '/' . $arg, $slug );
 
 }
 

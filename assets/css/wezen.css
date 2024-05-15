@@ -11,10 +11,27 @@ body div header nav main footer button table section aside h1 h2 h3 h4 h5 h6 abb
     font-style: normal !important;
 }
 
-.wezen-bg-dark{
-    background-color: #02031a !important;
+.bg-top{
+    background-color: #620e5d !important;
+}
+wezen-navbar-top{
+    transition: 1s;
 }
 
-.color-top-nav{
-    background-color: #9d007a;
+/*
+Seção para barra de navegação superior
+*/
+.wezen-nav-list{
+    .navbar-top{
+        .nav-item{
+            .nav-link{
+                color: white !important;
+                font-weight: 500;
+                transition: .5s;
+                &:hover{
+                    color: #acacac !important;
+                }
+            }
+        }
+    }
 }

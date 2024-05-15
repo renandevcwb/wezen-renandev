@@ -12,13 +12,10 @@
 wezen_get_component( 'form', 'newsletter' );
 ?>
 <!-- Início do Rodapé -->
-<footer class="container-fluid" role="complementary">
+<footer class="container-fluid bg-color-mix" role="complementary">
     <!-- Início das Barras de Navegação da Parte Inferior do Site --> 
     <div class="row navbar-footer">
         <?php 
-        // Call da barra de navegação MainLinks
-        wezen_get_component( 'nav', 'mainlinks' );
-
         // Call da barra de navegação Pages
         wezen_get_component( 'nav', 'pages' );
 
