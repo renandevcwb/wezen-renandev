@@ -63,6 +63,6 @@ endif;
 		 ); 
 		?>
 	</ul>
-	<?php c2_get_component( 'form', 'comments' );?>
+	<?php wezen_get_component( 'form', 'comments' );?>
 </section>
 <!-- Fim de Seção de Comentários -->
