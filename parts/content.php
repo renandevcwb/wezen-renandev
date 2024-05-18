@@ -22,7 +22,7 @@ endif;
  */ 
 
 // Call do loop padrão em páginas e página inicial estática
-if( is_page() || is_front_page() || is_single() ):
+if( is_page() || is_single() ):
 
     // The Loop
     if( have_posts() ):
@@ -41,7 +41,7 @@ if( is_page() || is_front_page() || is_single() ):
     endif;
 
 // Call do Loop para posts padrão
-elseif( is_home() || is_archive() || is_category() ):
+elseif( is_home() || is_archive() || is_category() || is_front_page() ):
 
     // The Loop
     if( have_posts() ):
