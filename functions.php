@@ -65,6 +65,13 @@ function wezen_get_footer(){
 
 }
 
+// Método para retorno da seção de comentários
+function wezen_get_comments(){
+
+    get_template_part( 'parts/comments' );
+
+}
+
 /**
  * Call dos arquivos de inc/func
  */

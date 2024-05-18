@@ -36,7 +36,7 @@ if( is_page() || is_front_page() || is_single() ):
     if( is_single() ):
         // Call da seção de comentários
         if( comments_open() ):
-            wezen_get_part( 'comments' );
+            wezen_get_comments();
         endif;
     endif;
 
