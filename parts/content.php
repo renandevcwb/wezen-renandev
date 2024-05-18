@@ -9,7 +9,7 @@
  */
 
 // Call do módulo de content
-if( !is_page() || !is_front_page() ):?>
+if( !is_page() || !is_front_page() || !is_single() ):?>
 <!-- Início do Conteúdo Principal -->
 <main class="container-fluid py-5">
     <!-- Início da Seção de Posts -->
@@ -22,7 +22,7 @@ endif;
  */ 
 
 // Call do loop padrão em páginas e página inicial estática
-if( is_page() || is_front_page() ):
+if( is_page() || is_front_page() || is_single() ):
 
     // The Loop
     if( have_posts() ):
@@ -30,6 +30,14 @@ if( is_page() || is_front_page() ):
             the_post();
             the_content();
         endwhile;
+    endif;
+
+    // Apenas para post único
+    if( is_single() ):
+        // Call da seção de comentários
+        if( comments_open() ):
+            wezen_get_part( 'comments' );
+        endif;
     endif;
 
 // Call do Loop para posts padrão
@@ -63,20 +71,7 @@ elseif( is_search() ):
             wezen_get_component( 'card', 'post' );
         endwhile;
     endif;
-elseif( is_single() ):
 
-     // The Loop
-     if( have_posts() ):
-        while( have_posts() ):
-            the_post();
-            the_content();
-        endwhile;
-    endif;
-
-    // Call da seção de comentários
-    if( comments_open() ):
-        wezen_get_part( 'comments' );
-    endif;
 elseif( is_404() ):
     ?>
     <main class="container-fluid d-flex justify-content-center align-items-center">
@@ -86,7 +81,7 @@ elseif( is_404() ):
 endif;
 
 // Fechamento de Tag principal
-if( !is_page() || !is_front_page() ):?>
+if( !is_page() || !is_front_page() || !is_single() ):?>
     </section>
     <!-- Fim da Seção de Posts -->
 </main>
