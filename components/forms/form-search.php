@@ -8,10 +8,10 @@
  * 
  */?>
 <!-- Início do Formulário de Busca -->
-<form action="<?php echo esc_url( home_url( '/' ) );?>" method="get">
-    <input type="search" placeholder="O que você está procurando?"/>
-    <button type="submit">
-            
+<form  class="form-group d-flex wezen-search" action="<?php echo esc_url( home_url( '/' ) );?>" method="get" role="search">
+    <input class="form-control wezen-control" type="search" placeholder="O que você está procurando?" autocomplete="on" name="s"/>
+    <button type="submit" class="btn btn-search">
+        <i class="fa-solid fa-magnifying-glass"></i> 
     </button>
 </form>
 <!-- Fim do Formulário de Busca -->

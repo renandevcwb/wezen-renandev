@@ -11,7 +11,7 @@
 <nav class="nav-social col-md flex-column py-3" id="navbar-socials">
     <div class="row text-center">
         <a class="navbar-brand my-3" href="<?php echo esc_url( home_url( '/' ) );?>">
-            <img class="img" src="<?php echo esc_url( get_bloginfo( 'template_url' ) );?>/assets/logos/logo-branca.svg" alt="Logotipo do site">
+            <img class="img" src="<?php echo esc_url( get_bloginfo( 'template_url' ) );?>/assets/logos/logo-white.svg" alt="Logotipo do site">
         </a>
         
         
@@ -19,7 +19,7 @@
             <span class="phone-number"><i class="fa-solid fa-phone"></i> (41) 99631-6848</span><br>
             <span class="email"><i class="fa-solid fa-envelope"></i> contato@renandev.com.br</span>
         </div>
-        <div class="box-social py-3">
+        <div class="box-social py-3 mt-3">
             <h4 class="footer-title">Siga na Redes Sociais</h4>
             <?php 
 

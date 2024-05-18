@@ -4,6 +4,9 @@ Author: Renan Delgado de Lima
 GitHub: https://github.com/renandevcwb/wezen-business
 */
 
+/*
+Reset de fonte
+*/
 body div header nav main footer button table section aside h1 h2 h3 h4 h5 h6 abbr form input fieldset textarea blockquote cite col label optgroup select  ul li a p span {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
@@ -11,15 +14,106 @@ body div header nav main footer button table section aside h1 h2 h3 h4 h5 h6 abb
     font-style: normal !important;
 }
 
-.bg-top{
-    background-color: black !important;
-}
-wezen-navbar-top{
-    transition: 1s;
+.small-text{
+    font-size: .9rem !important;
 }
 
-.bg-purple{
-    background-color: #9d007a;
+.text-second-color{
+    color: #f0f0d8;
+}
+
+/*
+Estilos para Barra superior de navegação
+*/
+.wezen-navbar-top{
+    border-bottom: 1px solid #c9c9c9;
+    /*Lista de links*/
+    .navbar-top{
+        .nav-item{
+            .nav-link{
+                color: #176ea7;
+                font-weight: 500;
+                transition: .5s;
+                &:hover{
+                    color: #000038;
+                }
+            }
+        }
+    }
+}
+
+/*
+Seção de Backgrounds
+*/
+.bg-first-color{
+    background-color: #000038;
+}
+
+.bg-second-color{
+    background-color: #f0f0d8;
+}
+
+.bg-third-color{
+    background-color: #176ea7;
+}
+
+.bg-cta-color{
+    background-color: #f0c505;
+}
+
+/*
+Formulário de Newsletter
+*/
+.wezen-newsletter{
+    .row{
+        .news-title{
+            font-size: 1.2rem;
+        }
+        .form-news{
+            .news-control{
+                border: none !important;
+            }
+            .btn-news{
+                background-color: #f0c505;
+                border: none !important;
+            }
+        }
+    }
+}
+/*
+Barra de Pesquisa
+*/
+.wezen-search{
+    transition: .5s;
+    .wezen-control{
+        background-color: #ebebeb;
+        border-top: 1px solid #d3d3d3;
+        border-bottom: 1px solid #d3d3d3;
+        border-left: 1px solid #d3d3d3;
+        border-right: none !important;
+        border-radius: 14px 0px 0px 14px;
+        box-shadow: none !important;
+    }
+    .btn-search{
+        background-color: #ebebeb;
+        border-top: 1px solid #d3d3d3;
+        border-bottom: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        border-left: none !important;
+        border-radius: 0px 14px 14px 0px;
+        box-shadow: none !important;
+    }
+}
+
+.wezen-search:focus{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*
+Seção de Rodapé
+*/
+.footer-title{
+    font-size: 1.3rem !important;
 }
 
 .text-dev{
@@ -31,84 +125,34 @@ wezen-navbar-top{
     }
 }
 
-.footer-title{
-    font-size: 1.3rem !important;
-}
-
-.small-text{
-    font-size: .9rem !important;
-}
-
-.nav-other-links{
-    .nav-item{
-        .nav-link{
-            color: white !important;
-            padding: 2px !important;
-            &:hover{
-                color: #9d007a !important;
-            }
-        }
-    }
-}
-
-/*
-Seção para barra de navegação superior
-*/
-.wezen-nav-list{
-    .navbar-top{
-        .nav-item{
-            .nav-link{
-                color: white !important;
-                font-weight: 500;
-                transition: .5s;
-                &:hover{
-                    color: #9d007a !important;
-                }
-            }
-        }
-    }
-}
-
-/*
-Formulário de Newsletter
-*/
-.form-news{
-    /*border: 1px solid white;
-    border-radius: 10px;*/
-    .input-news{
-        background-color: transparent !important;
-        border: none !important;
-        &::placeholder{
-            color: white !important;
-        }
-        &::-moz-placeholder{
-            color: white !important;
-        }
-        &:focus{
-            box-shadow: none !important;
-        }
-    }
-    .button-news{
-        color: white;
-        transition: 1s;
-        &:hover{
-            color: #9d007a;
-        }
-    }
-}
-
 /*
 Navegação de Redes Sociais
 */
 .social-list{
     .nav-item{
         .nav-link{
-            color: white !important;
+            color: #f0f0d8 !important;
             font-size: 1.6rem;
             transition: 1s;
         &:hover{
-            color: #9d007a !important;
+            color: #f0c505 !important;
         }
+        }
+    }
+}
+
+/*
+Barra de Navegação do Rodapé
+*/
+.nav-pages{
+    .nav-item{
+        .nav-link{
+            padding: 8px;
+            color: #f0f0d8;
+            transition: .5s;
+            &:hover{
+                color: #f0c505;
+            }
         }
     }
 }

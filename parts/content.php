@@ -11,7 +11,7 @@
 // Call do módulo de content
 if( !is_page() || !is_front_page() ):?>
 <!-- Início do Conteúdo Principal -->
-<main class="container-fluid">
+<main class="container-fluid py-5">
     <!-- Início da Seção de Posts -->
     <section class="row posts-section">
 <?php 
@@ -63,9 +63,26 @@ elseif( is_search() ):
             wezen_get_component( 'card', 'post' );
         endwhile;
     endif;
+elseif( is_single() ):
 
+     // The Loop
+     if( have_posts() ):
+        while( have_posts() ):
+            the_post();
+            the_content();
+        endwhile;
+    endif;
+
+    // Call da seção de comentários
+    if( comments_open() ):
+        wezen_get_part( 'comments' );
+    endif;
 elseif( is_404() ):
-    // Design de acordo com o projeto
+    ?>
+    <main class="container-fluid d-flex justify-content-center align-items-center">
+        <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/404.png" alt="Erro 404, página não encontrada"/>
+    </main>
+    <?php 
 endif;
 
 // Fechamento de Tag principal

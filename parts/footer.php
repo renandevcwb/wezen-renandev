@@ -12,7 +12,7 @@
 wezen_get_component( 'form', 'newsletter' );
 ?>
 <!-- Início do Rodapé -->
-<footer class="container-fluid bg-color-mix pt-5 small-text" role="complementary">
+<footer class="container-fluid bg-first-color text-second-color pt-5 small-text" role="complementary">
     <!-- Início das Barras de Navegação da Parte Inferior do Site --> 
     <div class="row navbar-footer py-3">
         <?php 

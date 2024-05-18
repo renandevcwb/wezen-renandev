@@ -9,19 +9,20 @@
  */?>
 
 <!-- Início do Formulário de Inscrição em Newsletter -->
-<div class="container-fluid wezen-newsletter py-5 bg-purple">
+<div class="container-fluid wezen-newsletter py-3 bg-third-color text-white">
     <div class="row text-center">
-        <h4 clas="">Newsletter</h4>
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <p class="">Assine a nossa newsletter, você será notificado quando sair artigos novos</p>
-        </div>
+        <h6 clas="news-title">Newsletter</h6>
+        <span class="news-text mb-3">cadastre-se. Você receberá uma notificação toda vez que um conteúdo for lançado</span>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
         <div class="col-md-6">
-            <form action="" method="get" class="form-group form-news px-3 py-3">
-                <input class="form-control py-1 input-news rounded-0 text-center" type="name" placeholder="Digite o seu nome"/><hr>
-                <input class="form-control py-1 input-news rounded-0 text-center" type="email" placeholder="Digite o seu e-mail"/><hr>
-                <button class="btn text-end my-1 button-news text-end" type="submit">Assinar</button>
-            </form>
+        <form action="" method="get" class="form-group form-news d-flex">
+            <input class="form-control py-1 news-control rounded-0" type="email" placeholder="Para assinar, digite o seu e-mail"/>
+            <button class="btn btn-news rounded-0" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
         </div>
+        <div class="col-md-3"></div>
     </div>
 </div>
 <!-- Fim do Formulário de Inscrição em Newsletter -->

@@ -13,10 +13,11 @@ function wezen_register_menus(){
 
     register_nav_menus(
         array(
-            'mainlinks'  => 'Barra de Navegação para Principais Links',
-            'pages'      => 'Barra de Navegação para Páginas',
-            'categories' => 'Barra de Navegação de Categorias',
-            'socials'    => 'Barra de Navegação de Redes Sociais'
+            'mainlinks'     => 'Navegação para Principais Links',
+            'complementary' => 'Navegação Complementar',
+            'pages'         => 'Navegação para Páginas',
+            'categories'    => 'Navegação de Categorias',
+            'socials'       => 'Navegação de Redes Sociais'
         )
     );
 }
