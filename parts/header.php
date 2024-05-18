@@ -16,6 +16,6 @@
 wezen_get_component( 'nav', 'categories' );
 
 // Call de Cabeçalhos
-if( is_home() || is_archive() || is_category() ):
+if( is_home() || is_archive() || is_category() || is_single() || is_search() ):
     wezen_get_component( 'card', 'header' );
 endif;

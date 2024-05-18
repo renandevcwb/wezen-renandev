@@ -21,6 +21,8 @@ if( is_home() ){
 }elseif( is_archive() ){
     $wezen_set_title       = get_the_archive_title();
     $wezen_set_description = get_the_achive_description();
+}elseif( is_single() ){
+    $wezen_set_title       = get_the_archive_title();
 }
 ?>
 <!-- Início de cabeçalho -->
@@ -30,17 +32,21 @@ if( is_home() ){
             <?php 
 
             // Call do Título
-            echo esc_html( $wezen_set_title );
+            echo $wezen_set_title;
             ?>
         </h1>
         <?php 
 
         // Call da descrição
         if( $wezen_set_description != false ){
-            echo '<span class="page-description">' . esc_html( $wezen_set_description ) .'</span>';
+            echo '<span class="page-description">' . $wezen_set_description .'</span>';
         }
         ?>
     </div>
+</header>
+<!-- Fim de cabeçalho -->
+<!-- Início do Caminho de Navegação -->
+<div class="container-fluid">
     <div class="row">
         <?php 
         // Call de BreadCrumb da Yoast SEO
@@ -49,5 +55,15 @@ if( is_home() ){
         endif;
         ?>
     </div>
-</header>
-<!-- Fim de cabeçalho -->
+</div>
+<!-- Fim do Caminho de Navegação -->
+<?php if( is_single() ):?>
+<!-- Início dos Dados do Autor -->
+<div clas="container-fluid">
+    <div class="row">
+        <span class="author-title">Publicado por <?php get_the_author();?></span>
+        <span class="author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></span>
+    </div>
+</div>
+<!-- Fim dos Dados do Author -->
+<?php endif;
