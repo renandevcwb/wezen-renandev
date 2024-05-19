@@ -11,6 +11,17 @@
 <main class="container py-5">
     <!-- Início da Seção de Posts -->
     <section class="row posts-section">
+        <?php if( is_single() ):?>
+        <!-- Início dos Dados do Autor -->
+        <div class="row py-3">
+            <div class="card card-author">
+                <?php get_avatar( the_author_meta( 'ID' ), 62 );?>
+                <span class="card-title author-title">Publicado por <?php echo get_the_author();?></span>
+                <span class="card-text author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></span>
+            </div>
+        </div>
+        <!-- Fim dos Dados do Author -->
+        <?php endif;?>
         <?php 
 
         // Call do loop padrão em páginas e página inicial estática

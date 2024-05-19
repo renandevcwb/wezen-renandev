@@ -54,16 +54,3 @@ if( is_home() ){
     </div>
 </div>
 <!-- Fim do Caminho de Navegação -->
-<?php if( is_single() ):?>
-<!-- Início dos Dados do Autor -->
-<div clas="container-fluid">
-    <div class="row py-3">
-        <div class="card card-author">
-            <?php get_avatar( get_the_author_meta( 'ID' ), 62 );?>
-            <span class="card-title author-title">Publicado por <?php echo get_the_author();?></span>
-            <span class="card-text author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></span>
-        </div>
-    </div>
-</div>
-<!-- Fim dos Dados do Author -->
-<?php endif;
