@@ -13,13 +13,13 @@
     <section class="row posts-section">
         <?php if( is_single() ):?>
         <!-- Início dos Dados do Autor -->
-        <div class="row py-3 d-flex py-3">
-            <div class="card card-author border-0">
-                <?php echo get_avatar( get_the_author_meta( 'user_email' ), 62, 'robohash', 'Avatar de Autor', array( 'class' => 'card-img rounded-circle' ) );?>
-                <div class="card-body">
-                    <h6 class="card-title author-title">Publicado por <?php echo get_the_author();?></h6>
-                    <p class="card-text author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></p>
-                </div>
+        <div class="row card card-author border-0 d-flex py-3">
+            <div class="col">
+            <?php echo get_avatar( get_the_author_meta( 'user_email' ), 62, 'robohash', 'Avatar de Autor', array( 'class' => 'author-img rounded-circle' ) );?>
+            </div>
+            <div class="card-body col">
+                <h6 class="card-title author-title">Publicado por <?php echo get_the_author();?></h6>
+                <p class="card-text author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></p>
             </div>
         </div>
         <!-- Fim dos Dados do Author -->
