@@ -8,7 +8,7 @@
  * 
  */?>
 <!-- Início do Conteúdo Principal -->
-<main class="container-fluid py-5">
+<main class="container py-5">
     <!-- Início da Seção de Posts -->
     <section class="row posts-section">
         <?php 
