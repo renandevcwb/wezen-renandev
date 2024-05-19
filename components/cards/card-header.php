@@ -19,7 +19,7 @@ if( is_home() ){
 }elseif( is_category() ){
     $wezen_set_title       = get_the_category();
 }elseif( is_archive() || is_single() ){
-    $wezen_set_title       = get_the_archive_title();
+    $wezen_set_title       = get_the_title();
 }
 ?>
 <!-- Início de cabeçalho -->
@@ -58,7 +58,7 @@ if( is_home() ){
 <!-- Início dos Dados do Autor -->
 <div clas="container-fluid">
     <div class="row">
-        <span class="author-title">Publicado por <?php get_the_author();?></span>
+        <span class="author-title">Publicado por <?php echo get_the_author();?></span>
         <span class="author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></span>
     </div>
 </div>
