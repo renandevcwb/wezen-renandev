@@ -18,10 +18,7 @@ if( is_home() ){
     $wezen_set_description = 'O mundo da tecnologia visto de outra forma';
 }elseif( is_category() ){
     $wezen_set_title       = get_the_category();
-}elseif( is_archive() ){
-    $wezen_set_title       = get_the_archive_title();
-    $wezen_set_description = get_the_achive_description();
-}elseif( is_single() ){
+}elseif( is_archive() || is_single() ){
     $wezen_set_title       = get_the_archive_title();
 }
 ?>
