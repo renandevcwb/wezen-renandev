@@ -15,7 +15,7 @@
         <!-- Início dos Dados do Autor -->
         <div class="card-author border-0 d-flex py-3 align-items-center">
             <?php echo get_avatar( get_the_author_meta( 'user_email' ), 62, 'robohash', 'Avatar de Autor', array( 'class' => 'img-fluid rounded-circle' ) );?>
-            <div class="author-body">
+            <div class="author-body px-2">
                 <h6 class="card-title author-title">Publicado por <?php echo get_the_author();?></h6>
                 <p class="card-text author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></p>
             </div>
