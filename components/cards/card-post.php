@@ -14,7 +14,7 @@
         // Call de imagens para Thumbnails
         if( has_post_thumbnail() ):
             // Call da Tnumbnail, caso esteja configurada para o post
-            the_post_thumbnail( 'medium', array( 'class' => 'card-img post-img', 'alt' => 'Thumnail de postagem' )  );
+            the_post_thumbnail( 'medium', array( 'class' => 'card-img post-img rounded-0', 'alt' => 'Thumnail de postagem' )  );
         endif;
         ?>
         <div class="card-body post-body">
