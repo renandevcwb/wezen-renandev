@@ -15,7 +15,9 @@
         <!-- Início dos Dados do Autor -->
         <div class="row py-3">
             <div class="card card-author">
-                <?php get_avatar( the_author_meta( 'ID' ), 62 );?>
+                <?php 
+                echo '<img src="' . esc_url( get_avatar_url( the_author_meta( 'ID' ), 62 ) ) . '" class="rounded img-fluid" alt="avatar do autor do artigo"/>';
+                ?>
                 <span class="card-title author-title">Publicado por <?php echo get_the_author();?></span>
                 <span class="card-text author-description"><?php echo esc_html( the_author_meta( 'description' ) );?></span>
             </div>
