@@ -64,7 +64,23 @@
             $args         = array( 's' => $wezen_term );
             $wezen_search = new WP_Query( $args );
             $number_posts = $wezen_search->post_count;
-
+            ?>
+            <!-- Início de Dados Sobre a Pesquisa -->
+            <div class="row py-3">
+                <h2 class="search-title">
+                    <?php 
+                    if( $number_posts == 0 ):
+                        echo 'Não foram encontrados resultados para a sua pesquisa';
+                    elseif( $number_posts == 1 ):
+                        echo 'Foi encontrado 1 resultado para a sua pesquisa';
+                    elseif( $number_posts >= 2 ):
+                        echo 'Foram encontrados ' . $number_posts . ' resultados para a sua pesquisa';
+                    endif;
+                    ?>
+                </h2>
+            </div>
+            <!-- Fim de Dados Sobre a Pesquisa -->
+            <?php 
             // The Loop
             if( $wezen_search->have_posts() ):
                 while( $wezen_search->have_posts() ):

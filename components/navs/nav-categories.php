@@ -12,13 +12,13 @@
     <div class="container-fluid">
         <div class="row w-100 m-0 p-0">
             <div class="col d-flex justify-content-between align-items-center py-1 px-0">
-                <button class="navbar-toggler wezen-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler wezen-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) );?>">
                     <img src="<?php echo esc_url( get_bloginfo( 'template_url' ) . '/assets/logos/logo-blue.svg' );?>" alt="Logotipo para barra superior do site"/>
                 </a>
-                <button class="navbar-toggler wezen-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchSupportedContent" aria-controls="searchSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler wezen-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#searchSupportedContent" aria-controls="searchSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>

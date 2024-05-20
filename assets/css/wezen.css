@@ -42,6 +42,14 @@ Estilos para Barra superior de navegação
     }
 }
 
+.navbar-toggler{
+    transition: .5s;
+}
+.navbar-toggler:focus{
+    color: #000038;
+    box-shadow: none !important;
+}
+
 /*
 Seção de Backgrounds
 */
