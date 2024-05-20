@@ -93,8 +93,11 @@ Formulário de Newsletter
 Barra de Pesquisa
 */
 .wezen-search{
-    border: 1px solid #176ea7;
+    border: 1px solid #b9b9b9;
     transition: .5s;
+    &:hover{
+        border: 1px solid #a0a0a0;
+    }
     .wezen-control{
         background-color: #fff;
         color: #000;
@@ -108,9 +111,6 @@ Barra de Pesquisa
     }
 }
 
-.wezen-search:focus{
-    border: 1px solid #f0c505;
-}
 /*
 Seção de Rodapé
 */
