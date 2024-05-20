@@ -99,10 +99,12 @@ Barra de Pesquisa
         border: 1px #f0c505;
     }
     .wezen-control{
+        background-color: #fff;
         border: none !important;
         box-shadow: none !important;
     }
     .btn-search{
+        background-color: #fff;
         border: none !important;
         box-shadow: none !important;
     }
