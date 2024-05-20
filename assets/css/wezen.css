@@ -93,18 +93,20 @@ Formulário de Newsletter
 Barra de Pesquisa
 */
 .wezen-search{
-    border: 1px #176ea7;
+    border: 1px solid #176ea7;
     transition: .5s;
     &:focus{
-        border: 1px #f0c505;
+        border: 1px solid #f0c505;
     }
     .wezen-control{
         background-color: #fff;
+        color: #000;
         border: none !important;
         box-shadow: none !important;
     }
     .btn-search{
         background-color: #fff;
+        color:#000;
         border: none !important;
         box-shadow: none !important;
     }
