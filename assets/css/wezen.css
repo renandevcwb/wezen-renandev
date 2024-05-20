@@ -95,9 +95,6 @@ Barra de Pesquisa
 .wezen-search{
     border: 1px solid #176ea7;
     transition: .5s;
-    &:focus{
-        border: 1px solid #f0c505;
-    }
     .wezen-control{
         background-color: #fff;
         color: #000;
@@ -106,12 +103,14 @@ Barra de Pesquisa
     }
     .btn-search{
         background-color: #fff;
-        color:#000;
         border: none !important;
         box-shadow: none !important;
     }
 }
 
+.wezen-search:focus{
+    border: 1px solid #f0c505;
+}
 /*
 Seção de Rodapé
 */
