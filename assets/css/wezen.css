@@ -97,6 +97,7 @@ Barra de Pesquisa
     transition: .5s;
     &:hover{
         border: 1px solid #a0a0a0;
+        box-shadow: 2px 2px 2px #636363;
     }
     .wezen-control{
         background-color: #fff;
