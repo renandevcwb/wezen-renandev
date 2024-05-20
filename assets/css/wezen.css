@@ -93,10 +93,10 @@ Formulário de Newsletter
 Barra de Pesquisa
 */
 .wezen-search{
-    border: #176ea7;
+    border: 1px #176ea7;
     transition: .5s;
     &:focus{
-        border: #f0c505;
+        border: 1px #f0c505;
     }
     .wezen-control{
         border: none !important;
