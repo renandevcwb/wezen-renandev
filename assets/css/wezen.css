@@ -43,6 +43,7 @@ Estilos para Barra superior de navegação
 }
 
 .navbar-toggler{
+    color: #176ea7;
     transition: .5s;
 }
 .navbar-toggler:focus{
