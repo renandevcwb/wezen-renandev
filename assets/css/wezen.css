@@ -113,15 +113,14 @@ Barra de Pesquisa
 }
 
 .wezen-search:focus{
-    transition: .5s;
-    .wezen-control{
+    .wezen-control:focus{
         border-top: 1px solid #f0c505;
         border-bottom: 1px solid #f0c505;
         border-left: 1px solid #f0c505;
         border-right: none !important;
-        box-shadow: none !important;
+        box-shadow: 1px 0px 2px #000 !important;
     }
-    .btn-search{
+    .btn-search:focus{
         border-top: 1px solid #f0c505;
         border-bottom: 1px solid #f0c505;
         border-right: 1px solid #f0c505;
