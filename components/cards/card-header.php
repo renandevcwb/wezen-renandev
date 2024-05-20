@@ -44,7 +44,7 @@ if( is_home() ){
 <!-- Fim de cabeçalho -->
 <!-- Início do Caminho de Navegação -->
 <div class="container-fluid">
-    <div class="row">
+    <div class="row py-2 text-danger">
         <?php 
         // Call de BreadCrumb da Yoast SEO
         if( function_exists('yoast_breadcrumb') ):
